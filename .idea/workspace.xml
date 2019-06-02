@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a38151fd-b4fd-4b9a-acaa-3b685f5089a4" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/database/migrations/2019_06_01_002024_create_tasks_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +234,7 @@
       <updated>1559345975393</updated>
       <workItem from="1559345981797" duration="19584000" />
       <workItem from="1559423238700" duration="3040000" />
-      <workItem from="1559471074921" duration="13632000" />
+      <workItem from="1559471074921" duration="13925000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1559346723110</created>
@@ -251,11 +250,32 @@
       <option name="project" value="LOCAL" />
       <updated>1559347086058</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated route">
+      <created>1559487086216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559487086216</updated>
+    </task>
+    <task id="LOCAL-00004" summary="little update">
+      <created>1559487147459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559487147459</updated>
+    </task>
+    <task id="LOCAL-00005" summary="task model added">
+      <created>1559487259636</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559487259636</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36256000" />
+    <option name="totallyTimeSpent" value="36549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="26" width="683" height="742" extended-state="4" />
@@ -289,7 +309,10 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="updated route" />
+    <MESSAGE value="little update" />
+    <MESSAGE value="task model added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task model added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
