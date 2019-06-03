@@ -6,7 +6,6 @@ use App\Task;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Input;
 
 class TaskController extends Controller
 {
@@ -17,21 +16,16 @@ class TaskController extends Controller
     }
 
 
-    //* Display list of task
+    // Display list of task
     public function index()
     {
-        $tasks = Task::whereUserId(Auth::id())
-            ->orderBy('created_at', 'desc')
-            ->get();
-
+        $tasks = Task::where('user_id', Auth::id())->orderBy('created_at', 'desc')->get();
         return view('home', compact('tasks'));
     }
 
-    //* Create New task
+    // Create New task
     public function create(Request $request)
     {
-
-        //Getting input from user
         $task = new Task;
         $task->user_id = Auth::id();
         $task->title = $request->title;
@@ -42,7 +36,7 @@ class TaskController extends Controller
         return redirect('/tasks');
     }
 
-    //* Mark task as completed
+
     public function completed($id)
     {
         $task = Task::find($id);
@@ -62,17 +56,19 @@ class TaskController extends Controller
     }
 
 
-    //* update edited task
+    // update edited task
     public function update($id, Request $request)
     {
+
         $task = Task::find($id);
-        $task->title = $request->title;
+        $task->title = $request->get('title');
+        $task->save();
 
         return redirect('/tasks');
     }
 
 
-    //* Delete task
+    // Delete task
     public function delete($id)
     {
         $task = Task::find($id);
